@@ -1,0 +1,86 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "附近民宿",
+				"onReachBottomDistance":50
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "会员中心"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "授权登录"
+			}
+		}
+	    ,{
+            "path" : "pages/settled/settled",
+            "style" : {
+				"navigationBarTitleText": "商家入驻"
+			}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"navigationBarTitleText": "搜索"
+			}
+        }
+        ,{
+            "path" : "pages/merchant/merchant",
+            "style" : {
+				"navigationBarTitleText": "商家详情"
+			}
+        }
+        ,{
+            "path" : "pages/myChant/myChant",
+            "style" : {
+				"navigationBarTitleText": "我的入驻"
+			}
+        }
+        ,{
+            "path" : "pages/help/help",
+            "style" : {
+				"navigationBarTitleText": "帮助信息"
+			}
+        }
+       
+        ,{
+            "path" : "pages/lists/lists",
+            "style" : {
+				"navigationBarTitleText": "商家列表"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+			"color": "#333333",
+			"selectedColor": "#f06c7a",
+			"borderStyle": "black",
+			"backgroundColor": "#ffffff",
+			"list": [{
+					"pagePath": "pages/index/index",
+					"iconPath": "static/image/tabBar/home.png",
+					"selectedIconPath": "static/image/tabBar/home-on.png",
+					"text": "首页"
+				},
+				{
+					"pagePath": "pages/user/user",
+					"iconPath": "static/image/tabBar/user.png",
+					"selectedIconPath": "static/image/tabBar/user-on.png",
+					"text": "我的"
+				}
+			]
+		}
+}
